@@ -1,0 +1,13 @@
+<a href="#" class="list-group-item clearfix" (click)="onSelected()">
+    <div class="pull-left">
+        <h4 class="list-group-item-heading">{{ movie.name }} ({{ movie.year }})</h4>
+        <p class="list-group-item-text">{{ movie.director }}</p>
+    </div>
+    <span class="pull-right">
+                <img
+                [src]="movie.imagePath"
+                alt="{{ movie.name }}"
+                class="img-responsive"
+                style="max-height: 50px;">
+            </span>
+</a>
